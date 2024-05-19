@@ -68,5 +68,7 @@ async def meme(ctx):
     with open(ruta_meme, 'rb') as meme_file:
         await ctx.send(file=discord.File(meme_file))
 
-
-bot.run("MTI0MTUxNzU3NzQ1MzQzNjk3OQ.G1y-sS.GucpEkMxW013CKhRzBSsMnAqGkgbG0mF5B2RPs")
+@bot.command()
+async def info_contaminacion(ctx):
+    await ctx.send(f"Debes analizar que cosas reciclar usando un pensamiento crítico")
+        
